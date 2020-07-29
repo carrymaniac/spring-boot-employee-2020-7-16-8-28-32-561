@@ -21,6 +21,7 @@ public class CompanyService {
         List<Employee> employees = employeeService.getEmployees();
         companies.add(new Company("1", "OOCL", Arrays.asList(employees.get(0),employees.get(1))));
         companies.add(new Company("2", "ThoughtWorks", Collections.singletonList(employees.get(2))));
+        companies.add(new Company("3","Alibaba",Arrays.asList(employees.get(3),employees.get(4))));
         return companies;
     }
 }
